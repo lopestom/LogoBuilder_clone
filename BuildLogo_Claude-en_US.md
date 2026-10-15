@@ -202,14 +202,18 @@ exec "$APPDIR/usr/bin/mono" "$WORK/LogoBuilder.exe" "$@"
 
 ## Build steps (Debian or Ubuntu, ideally an old one)
 1- Install mono-runtime mono-mcs gcc python3 libgdiplus wget plus the libmono-system-*4.0-cil packages (windows-forms, drawing, core, xml, configuration, data, security, runtime-serialization).
+
 2- Run gcc on the shim, mcs on FolderPicker.cs, and patch_exe.py LogoBuilder.exe patched/LogoBuilder.exe.
+
 3- Lay out an AppDir like this:
 usr/bin/mono is mono-sgen (on Ubuntu 24.04, readlink -f /usr/bin/mono), plus logobuilder-pickfolder.
 usr/lib/ holds libmonosgen-2.0.so.1, libMonoPosixHelper.so, libmono-native.so, libgdiplus.so.0 and every non-glibc library ldd lists for them.
 usr/lib/mono is a copy of /usr/lib/mono, leaving out the *-api, xbuild* and lldb folders.
 usr/etc/mono is a copy of /etc/mono. Before </configuration> in its config, add one <dllmap dll="X" target="libLogoBuilderShell.so"/> per name: shell32.dll, shell32, user32.dll, user32, shlwapi.dll.
 usr/share/logobuilder/ holds the patched exe, LogoBuilder.exe.config, the .dll files, logo.exe, sizes.txt, tips.txt, the es it pt ru zh-Hans folders, FolderPicker.exe and a BUILD_ID file.
+
 4- Add a .desktop file and an icon (wrestool -x -t14 LogoBuilder.exe from icoutils gives you one).
+
 5- Download appimagetool-x86_64.AppImage from the AppImage GitHub releases and run ARCH=x86_64 appimagetool AppDir LogoBuilder-1.6-x86_64.AppImage.
 
 On your PC, run chmod +x on the AppImage and start it. If your distro lacks FUSE 2, use ./LogoBuilder-1.6-x86_64.AppImage --appimage-extract-and-run. Install zenity or kdialog if you want a native folder dialog; otherwise the Mono one is used.
