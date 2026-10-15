@@ -1,0 +1,9 @@
+﻿Per creare un nuovo progetto devi solo selezionare un file logo.bin e specificare la cartella del nuovo progetto.
+Puoi specifcare esplicitamente una lingua della GUI del programma aggiungendo la sua abbreviazione alla linea di comando, es. "LogoBuilder en-US".
+Puoi mettere i file update-binary o updater-script nella cartella del programma, cosichè il programma li usera nella creazione del file update.zip.
+Dopo aver creato il progetto il programma cercherà i file update-binary e updater-script nella relativa cartella e li copierà nella cartella del progetto per usarli per la creazione di update.zip.\nQuesta funzione può essere usata per l'adattamento del programma per uno specifco modello di telefono o versione di recovery CWM.
+Non devi convertire i file immagine BMP o JPG in PNG, devi solo rinominarli in imgN.png (questa funzione è fornita dall'Image Class di .NET  Framework).
+In modo predefinito il programma crea il file update.zip, adatto per ZP100 e ZP300 con chipset MTK6575. (esso flasha /dev/logo)
+Funzione segreta!\nCon questo programma puoi creare un file boot-logo. Prova a trascinare un file immagine nel programma.
+Domande?\nHai trovato un bug?\nVuoi tradurre il programma nella tua lingua?\n\nInvia una email a ankadnikov@gmail.com
+Tradotto da bovirus (bovirus@gmail.com)

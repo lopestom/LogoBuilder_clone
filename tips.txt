@@ -1,0 +1,8 @@
+﻿To create new project you just need to select a logo.bin file and specify a project directory.
+You can specify program language explicitly adding it's short name to command line, eg. "LogoBuilder en-US".
+You can place update-binary or updater-script files to project directory, so the program will use them in update.zip creation.
+After creating a project program will search for update-binary and updater-script files in its directory and copy them to the project directory for using in update.zip creation.\nThis feature can be used for program adaptation for a specific phone model or CWM version.
+You don't need convert BMP or JPG images to PNG, you can just rename them to imgN.png (this feature is provided by the Image class from .NET framework).
+By default program creates update.zip file, appropriated for ZP100 and ZP300 based on mtk6575. (it flashes /dev/logo)
+Secret feature!\nYou can make a boot_logo file via this program. Just try drag an image file to the program.
+Any questions?\nFound a bug?\nWish to translate program to your language?\n\nEmail to ankadnikov@gmail.com

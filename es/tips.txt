@@ -1,0 +1,8 @@
+﻿Para crear nuevo proyecto sólo tiene que seleccionar un archivo logo.bin y especificar un directorio para el proyecto.
+Puede especificar el idioma del programa explícitamente, añadiendo su nombre corto a la línea de comandos.\nPor ejemplo. "LogoBuilder es".
+Puede añadir en el directorio del proyecto los archivos update-binary o updater-script, de este modo el programa los utilizará en la creación del update.zip.
+Después de crear un proyecto, el programa buscará los archivos update-binary y updater-script en su directorio y los copiará en el directorio del proyecto para su uso en la creación de update.zip.\nEsta característica se puede utilizar para adaptar el programa para un modelo de teléfono específico o una versión CWM.
+No es necesario convertir el formato BMP o JPG a PNG, sólo cambie el nombre a imgN.png (esta característica es proporcionada por la "Image Class" de .NET Framework).
+Por defecto, el programa crea el archivo update.zip apropiado para ZP100 y ZP300, basados en mtk6575. (flashea /dev/logo)
+¿Preguntas?\n¿Encontró algún bug?\n¿Quieres traducir este programa a tu idioma?\n\nEnvíame un Email a ankadnikov@gmail.com
+Traducido al Español por amnesia.
