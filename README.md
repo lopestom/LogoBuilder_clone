@@ -5,7 +5,7 @@ However, it was only available for Windows.
 Nowadays, finding something similar that works the way it did is very difficult, even on Linux. There are always limitations since the source code has never been released.
 But there's always someone who tries and does something interesting, getting close, but I can say that if it works, that's enough. There are about 4 to 7 authors who took the idea and made their projects for Linux. Some no longer work and others (maybe only 2) don't work for all resolutions and devices.
 
-Since the LogoBuilder software is free, but without updates since 2015, and reading about OER, I thought: Here's an opportunity to test if it works and try something from Windows for Linux.
+Since the LogoBuilder software is free, but without updates since 2015 and reading about reverse engineering softwares a long time ago, I thought: Here's an opportunity to test if it works and try something from Windows for Linux.
 
 Nothing here deviates from respect, citations, and references, since in addition to being a case study with an exclusively educational vision/purpose, with the objective of demonstrating how reverse engineering technology using AI worked to "revive" a software over 10 years old to run on Linux.
 Since I didn't want to go further, some things like links, direct image selection by mouse, and texts in the information boxes ended up looking strange.
@@ -43,14 +43,22 @@ To avoid unnecessary issues, it is not recommended to use this program if you ar
 9) Done!
 
 > [!TIP]
-> 1. Note that there is a selector that can be adjusted up or down. This allows the selector to move up or down until the user sees the desired image.
+> 1.Note that there is a selector that can be adjusted up or down. This allows the selector to move up or down until the user sees the desired image.
 > <details><summary>Example -- Click to open</summary>
 > <p>
-> (picture_Mod) 1,2,3
+> <img width="585" height="397" alt="1" src="https://github.com/user-attachments/assets/bf1f5afc-d8dc-4138-a624-381554b180f3" />
+> <img width="520" height="423" alt="2" src="https://github.com/user-attachments/assets/fdcde742-d89e-404c-9d4b-1b18b1f39daa" />
+> <img width="1335" height="433" alt="3" src="https://github.com/user-attachments/assets/2415dfff-a08a-4406-b032-20a19954c564" />
 > </p>
 > </details>
 >
 > 2.You can click on the resolution numbers to change the image if you haven't done so before or to adjust it better.
+> <details><summary>Example -- Click to open</summary>
+> <p>
+> <img width="1332" height="459" alt="PrintScreen_20261014_230855" src="https://github.com/user-attachments/assets/1a3c8751-51fc-4b00-b128-850af554cda6" />
+> <img width="1308" height="796" alt="PrintScreen_20261015_000025" src="https://github.com/user-attachments/assets/872d6e8a-c116-4340-873f-7a456aede47b" />
+> </p>
+> </details>
 
 ## Frequently Asked Questions
 <details><summary>Q/A -- Click to open</summary>
@@ -84,16 +92,34 @@ A: Unfortunately, this is a time-consuming and tedious process for any user to u
 
 > [!WARNING]
 > Remember that anything you do with your phone is at your own risk.
+> 
 > Do not forget to create backups.
+> 
 > Do not attempt to replace the update script if you do not know what it does.
+> 
 > If you do not understand what the program does, avoid using it.
+> 
 > Lenovo devices: A charging error may occur when the phone is powered off. Proceed with caution.
+> 
 > Xiaomi/Redmi/POCO devices: Some models may have locks [the logo partition can rely on digital signature checks -- signature check -- in the LK] that could render the device unusable if a modified `logo.bin` file is installed. Proceed with caution.
 
-### Updates
+## Updates
 If a new version of LogoBuilder.exe appears (may be? nothing's impossible....), patch_exe.py will refuse it because the SHA-256 won’t match. In that case the two call sites need to be found again. I can help with that, since the REA/Cecil analysis steps are the same.
 
 > [!IMPORTANT]  
 > If you intend to alter and/or improve any of this, don't forget to give proper credit to the authors.
+
+### Files
+All files for use will be in Releases option.
+
+### Screenshots
+<details><summary>Click to open</summary>
+<p>
+<img width="1014" height="565" alt="LogoBuilder-screenshot" src="https://github.com/user-attachments/assets/0d7c04fd-a014-4ca1-8cbf-c83c04e764e8" />
+<img width="979" height="853" alt="PrintScreen_20261014_213947" src="https://github.com/user-attachments/assets/f0feb053-d773-47a8-95ef-dc2aee2cb2fa" />
+<img width="1046" height="587" alt="PrintScreen_20261014_170818" src="https://github.com/user-attachments/assets/9b7c6d8e-b526-4c89-923c-a31374263042" />
+<img width="1031" height="639" alt="PrintScreen_20261014_204416" src="https://github.com/user-attachments/assets/59822932-fad6-4d71-8f2d-8568052ce9d4" />
+</p>
+</details>
 
 Enjoy your boot logos!
