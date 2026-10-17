@@ -82,12 +82,16 @@ A: Make sure all dependencies are installed if you are using the AppImage, or ve
 
 Q: The `update.zip` file created by the program worked fine, but nothing changed on the phone—or the `update.zip` didn't work at all.
 
-A: 1) As of 2026, you shouldn't use the `update.zip` file, as it is not secure—plus, there are better ways to do this.
-2) Try flashing the file using FlashTool.
-3) Try flashing the file using `fastboot` (the device must be unlocked first!).
+A: 1- As of 2026, you shouldn't use the `update.zip` file, as it is not secure—plus, there are better ways to do this.
+
+   2- Try flashing the file using FlashTool.
+
+   3- Try flashing the file using `fastboot` (the device must be unlocked first!).
 `fastboot flash logo logo.bin`
 
-Q: The program shows an error: "incompatible data size..." A: Most likely, your `logo.bin` file is corrupted or comes from a device other than a MediaTek-based phone. Do not assume that just because a device uses a MediaTek (MTK) chipset, everything else is the same. Tablets and other MediaTek devices almost always have a different structure for the `/logo` partition compared to phones (or it may be entirely absent). In fact, neither I, nor anyone else not even MediaTek itself can guarantee that all phones will have a similar structure in this section.
+Q: The program shows an error: "incompatible data size...".
+
+A: Most likely, your `logo.bin` file is corrupted or comes from a device other than a MediaTek-based phone. Do not assume that just because a device uses a MediaTek (MTK) chipset, everything else is the same. Tablets and other MediaTek devices almost always have a different structure for the `/logo` partition compared to phones (or it may be entirely absent). In fact, neither I, nor anyone else not even MediaTek itself can guarantee that all phones will have a similar structure in this section.
 
 Q: How can I change the battery charging animation?
 
