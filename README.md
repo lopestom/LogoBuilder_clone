@@ -21,7 +21,7 @@ LogoBuilder is a Windows tool used to customize the boot logo and battery chargi
 The program was developed with the support of the community from the china-iphone.ru or in [china-devices.com](https://web.archive.org/web/20141003030955/china-devices.com/Thread-MTK-boot-logo-logo-bin-Editor) forums, to whom we are very grateful. The page/website (although it is no longer online =>> The requested URL was not found on this server. That's all we know.) for the LogoBuilder software on Windows on the internet is [here](https://sites.google.com/site/kadanutilities/home/logobuilder?pli=1&authuser=0).
 
 Created on October 24, 2012 on xda forum, it was very successful for users who wanted to modify the device's initial logo.
-The author's name is [kadar](https://xdaforums.com/m/ankadnikov.4916584/), and he is listed in the upper left corner. He can be contacted (if he still responds) via email at ankadnikov@gmail.com.
+The author's name is [kadar](https://xdaforums.com/m/ankadnikov.4916584/), and he is listed in the upper rigth corner. He can be contacted (if he still responds) via [email](ankadnikov@gmail.com).
 
 Some references to consultations and research on the subject can be found at [xda](https://xdaforums.com/t/changing-boot-logo-logo-bin-program.1953726/) and [4pda](https://4pda.to/forum/index.php?showtopic=391859).
 
