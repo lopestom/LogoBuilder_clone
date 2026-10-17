@@ -1,4 +1,4 @@
-# Before taking any action - explaining the reason/motivation
+# Before any action - clarifying the reason/motivation.
 Many users familiar with this software, especially Mediatek users, know how valuable it was back then and how well it worked.
 However, it was only available for Windows.
 
@@ -14,12 +14,12 @@ For these reasons, nothing has been altered in relation to the words, phrases, p
 
 You can find the [REA](https://github.com/morluto/rea/blob/main/README.md) used in this case here, and how Claude AI was used in [this document](https://github.com/lopestom/LogoBuilder_clone/blob/Linux/BuildLogo_Claude-en_US.md).
 
-
 # LogoBuilder
 LogoBuilder is a Windows tool used to customize the boot logo and battery charging graphics on Android devices with a MediaTek (MTK) processor.
 
 # Precedents / Authors
 The program was developed with the support of the community from the china-iphone.ru or in [china-devices.com](https://web.archive.org/web/20141003030955/china-devices.com/Thread-MTK-boot-logo-logo-bin-Editor) forums, to whom we are very grateful. The page/website (although it is no longer online =>> The requested URL was not found on this server. That's all we know.) for the LogoBuilder software on Windows on the internet is [here](https://sites.google.com/site/kadanutilities/home/logobuilder?pli=1&authuser=0).
+
 Created on October 24, 2012 on xda forum, it was very successful for users who wanted to modify the device's initial logo.
 The author's name is [kadar](https://xdaforums.com/m/ankadnikov.4916584/), and he is listed in the upper left corner. He can be contacted (if he still responds) via email at ankadnikov@gmail.com.
 
@@ -64,6 +64,7 @@ To avoid unnecessary issues, it is not recommended to use this program if you ar
 <details><summary>Q/A -- Click to open</summary>
 <p>
 Q: Where can I get the `logo.bin` file from my phone?
+
 A: Honestly, you shouldn't be using this program if you don't know how to do that. But, if you decide to try anyway, here are a few options:
 1) This file is usually included in the firmware image.
 2) Example usage:
@@ -72,13 +73,16 @@ You can run this in a terminal or via `adb shell` with root access, of course. A
 3) You can perform a "ReadBack" using SmarthPhoneFlashTool.
 
 Q: My `logo.bin` file was unpacked, but instead of nice images, I see noise.
+
 A: The image size is incorrect. Click on the image size and change it to the correct one. Recreate the project so that the new size is applied to the rest of the images.
 
 Q: Why won't the program start?
+
 A: Make sure all dependencies are installed if you are using the AppImage, or verify that you have correctly installed the `tar.gz` file.
 
-Q: The `Update.zip` file created by the program worked fine, but nothing changed on the phone—or the `Update.zip` didn't work at all.
-A: 1) As of 2026, you shouldn't use the `Update.zip` file, as it is not secure—plus, there are better ways to do this.
+Q: The `update.zip` file created by the program worked fine, but nothing changed on the phone—or the `update.zip` didn't work at all.
+
+A: 1) As of 2026, you shouldn't use the `update.zip` file, as it is not secure—plus, there are better ways to do this.
 2) Try flashing the file using FlashTool.
 3) Try flashing the file using `fastboot` (the device must be unlocked first!).
 `fastboot flash logo logo.bin`
@@ -86,6 +90,7 @@ A: 1) As of 2026, you shouldn't use the `Update.zip` file, as it is not secure�
 Q: The program shows an error: "incompatible data size..." A: Most likely, your `logo.bin` file is corrupted or comes from a device other than a MediaTek-based phone. Do not assume that just because a device uses a MediaTek (MTK) chipset, everything else is the same. Tablets and other MediaTek devices almost always have a different structure for the `/logo` partition compared to phones (or it may be entirely absent). In fact, neither I, nor anyone else not even MediaTek itself can guarantee that all phones will have a similar structure in this section.
 
 Q: How can I change the battery charging animation?
+
 A: Unfortunately, this is a time-consuming and tedious process for any user to undertake. Since details such as image size and screen positioning for the "powered-off" charging animation are hard-coded—programmed specifically by the OEM there is not much that can be done at the moment. That said, you can still replace the individual images used in the charging animation and try something creative let your imagination run wild!
 </p>
 </details>
